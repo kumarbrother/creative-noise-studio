@@ -7,7 +7,9 @@ const PageHeader = ({ title, subtitle, buttonText, onClick }) => {
         <h2>{title}</h2>
         <p>{subtitle}</p>
       </div>
-      {buttonText && <button onClick={onClick}>{buttonText}</button>}
+       <button onClick={onClick} className="add-btn">
+        {buttonText}
+      </button>
     </div>
   )
 }
